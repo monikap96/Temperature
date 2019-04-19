@@ -8,7 +8,7 @@ public class CelsiusTest {
 
 
     @Test
-    public void testCorrect() {
+    public void testCorrect() throws TemperatureException {
         Celsius celsius = new Celsius(100);
 
         double expectedValue = 373.15;

@@ -1,10 +1,10 @@
 package com.parlak.monika.temperature;
 
 public class Kelvin extends Temperature {
-    public Kelvin(double temperature) throws KelvinException {
+    public Kelvin(double temperature) throws TemperatureException {
         super(temperature);
-        if(temperature<0){
-            throw new KelvinException();
+        if (temperature < 0) {
+            throw new TemperatureException();
         }
     }
 
@@ -13,7 +13,7 @@ public class Kelvin extends Temperature {
     }
 
     public double toFahrenheit() {
-        return temperature* (9 / 5) - 495.67;
+        return temperature * (9 / 5) - 495.67;
     }
 
 

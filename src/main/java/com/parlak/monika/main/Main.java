@@ -3,12 +3,12 @@ package com.parlak.monika.main;
 import com.parlak.monika.temperature.Celsius;
 import com.parlak.monika.temperature.Fahrenheit;
 import com.parlak.monika.temperature.Kelvin;
-import com.parlak.monika.temperature.KelvinException;
+import com.parlak.monika.temperature.TemperatureException;
 
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String [] args) throws KelvinException {
+    public static void main(String [] args) throws TemperatureException {
 
         Scanner scanner = new Scanner(System.in);
         double value;
